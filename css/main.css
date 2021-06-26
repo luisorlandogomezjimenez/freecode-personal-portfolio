@@ -1,0 +1,151 @@
+body {
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  color: #f4ebe8;
+}
+
+#navbar {
+  background: #3993dd;
+  overflow: hidden;
+  left: 0;
+  padding: 0;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+a.navlink {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #f4ebe8;
+  display: block;
+  padding: 20px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+}
+#navbar li {
+  margin: 0;
+  padding: 0;
+  float: right;
+  height: auto;
+}
+
+#navbar a:hover {
+  background-color: #7587e9;
+}
+
+#welcome-section {
+  height: 100vh;
+  background: #197bff;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+.content {
+  margin: auto;
+  padding: 150px;
+}
+
+#welcome-section h1 {
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+}
+#welcome-section h3 {
+  font-size: 2em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: auto;
+  background: #4790cc;
+  padding-bottom: 40px;
+}
+main h1 {
+  font-family: "Lacquer", sans-serif;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.project-tile {
+  background: #e0acd5;
+  padding: 0;
+  border: 2px solid #ccc;
+  width: 400px;
+  text-align: center;
+  margin-right: 60px;
+  font-family: "Lacquer", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+div.desc {
+  padding: 15px;
+  margin-top: 0;
+  text-align: center;
+  background: #29e7cd;
+}
+.project-tile:hover {
+  border: 2px solid #777;
+}
+footer {
+  background: #197bff;
+  height: 300px;
+  width: auto;
+  padding: 20px;
+  margin-bottom: 0;
+  color: #f4ebe8;
+  font-family: "Lacquer", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+hr {
+  border: 2px solid #001f3f;
+}
+
+@media (max-width: 700px) {
+  .project-tile img {
+    width: 100%;
+    height: auto;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    height: auto;
+    padding: 0;
+    width: 100vw;
+    background-color: #fffc19;
+  }
+  #welcome-section {
+    height: auto;
+    background-color: #197bff;
+    width: 100vw;
+    padding-bottom: 0;
+  }
+  #navbar {
+    background-color: #f10618;
+    overflow: auto;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
