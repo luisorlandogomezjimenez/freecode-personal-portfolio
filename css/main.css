@@ -114,7 +114,7 @@ div.desc {
 
 footer {
   background: #197bff;
-  height: 83vh;
+  height: 100vh;
   width: auto;
   padding: 20px;
   margin-bottom: 0;
@@ -130,13 +130,16 @@ hr {
   margin: auto;
 }
 
+footer {
+  height: 110vh;
+}
 .footer3 {
-  padding: 60px;
-  height: 80vh;
+  height: auto;
 }
 
 .footer1 {
   margin: auto;
+  margin-top: 200px;
   padding: 20px;
 }
 
@@ -146,37 +149,58 @@ hr {
   margin: auto;
   font-weight: bold;
 }
-.footer2 ul {
-  list-style: none;
-  margin: auto;
-}
 
 .footer2 {
-  margin-bottom: 30px;
-  height: auto;
+  margin: auto;
+  height: 150px;
+}
+
+.footer2 ul {
+  list-style: none;
+  margin: 30px;
 }
 
 .footer2 li {
   float: right;
-  padding: 0 30px;
+  padding: 40px;
   font-size: 2em;
   font-weight: bold;
+  margin: auto;
 }
 
 .comments {
   margin: auto;
 }
 
-#profile-link {
+#contacts h4,
+a {
+  display: inline;
   text-decoration: none;
   color: #f4ebe8;
+  font-family: "Open Sans", sans-serif;
+}
+
+#contacts li:hover {
+  display: inline-block;
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.comments {
+  padding: 30px 40px;
 }
 
 @media (max-width: 700px) {
-  .project-tile img {
+  #navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
+  }
+
+  #welcome-section {
     height: auto;
   }
+
   main {
     display: flex;
     flex-direction: column;
@@ -185,21 +209,10 @@ hr {
     height: auto;
     padding: 0;
     width: 100vw;
-    background-color: #fffc19;
   }
-  #welcome-section {
-    height: auto;
-    background-color: #197bff;
-    width: 100vw;
-    padding-bottom: 0;
-  }
-  #navbar {
-    background-color: #f10618;
-    overflow: auto;
-    left: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
+
+  .project-tile img {
     width: 100%;
+    height: auto;
   }
 }
