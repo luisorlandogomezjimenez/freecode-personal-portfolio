@@ -50,7 +50,7 @@ a.navlink {
 }
 .content {
   margin: auto;
-  padding: 150px;
+  padding: 150px 40px;
 }
 
 #welcome-section h1 {
@@ -81,7 +81,7 @@ main h1 {
   width: 100%;
   text-align: center;
   padding: 10px;
-  margin: 30px 200px;
+  margin: 30px 100px;
   border-bottom: 2px solid #f4ebe8;
 }
 
@@ -130,7 +130,7 @@ hr {
 }
 
 footer {
-  height: 110vh;
+  height: auto;
 }
 .footer3 {
   height: auto;
@@ -139,7 +139,7 @@ footer {
 
 .footer1 {
   margin: auto;
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 20px;
 }
 
@@ -148,6 +148,7 @@ footer {
   font-size: 3em;
   margin: auto;
   font-weight: bold;
+  padding: 30px 40px 0 40px;
 }
 
 .footer2 {
@@ -177,6 +178,11 @@ footer {
 
 .comments {
   margin: auto;
+  padding: 20px 40px;
+}
+
+.comments p {
+  margin: auto;
 }
 
 #contacts h4,
@@ -191,10 +197,6 @@ a {
   display: inline-block;
   animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s; /* don't forget to set a duration! */
-}
-
-.comments {
-  padding: 30px 40px;
 }
 
 @media (max-width: 700px) {
@@ -212,13 +214,14 @@ a {
   #welcome-section h1 {
     margin-top: 60px;
     font-size: 3em;
+    padding-top: 60px;
   }
   #welcome-section h3 {
     font-size: 1em;
   }
 
   #welcome-section {
-    height: auto;
+    height: 100vh;
   }
 
   main {
@@ -251,7 +254,7 @@ a {
   }
 
   footer {
-    height: 90vh;
+    height: 100vh;
   }
   .footer3 {
     height: auto;
@@ -274,6 +277,10 @@ a {
   .comments {
     padding: 30px 40px;
   }
+
+  a.navlink {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 470px) {
@@ -283,5 +290,20 @@ a {
     float: none;
     display: inline-block;
     font-size: 0.7em;
+  }
+
+  .comments {
+    padding-top: 40px;
+  }
+
+  .footer1 {
+    margin-top: 10px;
+  }
+
+  .footer3 {
+    padding-top: 20px;
+  }
+  #contact {
+    height: 100vh;
   }
 }
